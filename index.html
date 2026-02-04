@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+/* 🔒 GLOBAL LINK SAFE */
+a,
+a:hover,
+a:active,
+a:visited{
+  text-decoration:none !important;
+  color:inherit !important;
+}
+
+body{
+  background:black;
+  color:white;
+  text-align:center;
+  height:100vh;
+  overflow:hidden;
+  position:relative;
+}
+
+/* BACKGROUND */
+.background{
+  position:fixed;
+  inset:0;
+  background:url('https://gogamex.fun/wp-content/uploads/2025/05/istockphoto-519665528-612x612-1.jpg') center/cover no-repeat;
+  filter:blur(1px);
+  z-index:-2;
+}
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:-1;
+}
+
+/* BUBBLES */
+.bubbles span{
+  position:absolute;
+  bottom:-50px;
+  width:20px;height:20px;
+  background:rgba(255,255,255,.2);
+  border-radius:50%;
+  animation:rise 10s linear infinite;
+}
+.bubbles span:nth-child(2){width:30px;height:30px;left:20%;animation-duration:7s;}
+.bubbles span:nth-child(3){width:40px;height:40px;left:40%;animation-duration:9s;}
+.bubbles span:nth-child(4){width:50px;height:50px;left:60%;animation-duration:6s;}
+.bubbles span:nth-child(5){width:60px;height:60px;left:80%;animation-duration:8s;}
+
+@keyframes rise{
+  0%{bottom:-50px;opacity:0}
+  50%{opacity:1}
+  100%{bottom:100%;opacity:0}
+}
+
+/* CONTENT */
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  padding:15px;
+  position:relative;
+  z-index:2;
+}
+
+.blur-box{
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(12px);
+  border-radius:15px;
+  padding:25px;
+  width:90%;
+  max-width:400px;
+  box-shadow:0 0 20px rgba(0,230,255,.6);
+}
+
+h1{
+  color:#00e6ff;
+  font-size:24px;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+.timer{
+  font-size:22px;
+  font-weight:700;
+  margin:10px 0;
+}
+
+.profile img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  border:3px solid #00e6ff;
+  box-shadow:0 0 15px #00e6ff;
+  margin:10px 0;
+  object-fit:cover;
+}
+
+/* BUTTON */
+@keyframes shine{
+  from{background-position:-200%}
+  to{background-position:200%}
+}
+@keyframes zoom{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.15)}
+  100%{transform:scale(1)}
+}
+
+.view-btn{
+  display:inline-block;
+  height:45px;
+  line-height:45px;
+  padding:0 26px;
+  border-radius:35px;
+  font-size:16px;
+  font-weight:600;
+  background:linear-gradient(45deg,#32B0ED,#3a7bd5);
+  background-size:400% 400%;
+  animation:shine 8s linear infinite,zoom 3s ease-in-out infinite;
+  color:#fff;
+  margin-top:10px;
+}
+
+.footer-text{
+  font-size:13px;
+  margin-top:14px;
+  opacity:.85;
+}
+
+/* CREDIT */
+.credit{
+  position:absolute;
+  bottom:10px;
+  width:100%;
+  text-align:center;
+  font-size:12px;
+  color:#00e6ff;
+  opacity:.85;
+}
+.credit a{
+  color:#00ffcc;
+  font-weight:600;
+}
+</style>
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1460209789445834');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1460209789445834&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<div class="bubbles">
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<div class="container">
+  <div class="blur-box">
+    <h1>SatyamDubai Cricket Tennis
+
+
+</h1>
+    <p>💰 Our Game, Your Strategy, Your Way
+
+</p>
+
+    <div class="timer">
+      <span id="countdown">3</span> SECONDS
+    </div>
+
+    <div class="profile">
+      <img src="https://thinkbigx.sbs/wp-content/uploads/2025/03/r.jpg" alt="Trader">
+    </div>
+
+    <h2>53,786 Subscribers</h2>
+    <p>✅ Expert Cricket Match Insights
+ 💹</p>
+
+    <a href="https://t.me/+sVmxFTxvSlNiYWNl" class="view-btn">
+      JOIN NOW FOR FREE
+    </a>
+
+    <p class="footer-text">
+      💎 Study the Game Before the Match
+
+ 🌍
+    </p>
+  </div>
+</div>
+
+<!-- ⭐ CREDIT LINE -->
+<div class="credit">
+  Ads managed by 
+  <a href="https://t.me/+TRlJl628l-FkMWE9" target="_blank">
+    @Nexgroww_agency
+  </a>
+</div>
+
+<script>
+//let countdown=3;
+setInterval(()=>{
+//  document.getElementById("countdown").innerText=countdown;
+  if(countdown===0){
+ //   window.location.href="https://t.me/+sVmxFTxvSlNiYWNl;
+  }
+  countdown--;
+},1000);
+</script>
+
+</body>
+</html>
